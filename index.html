@@ -3,41 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aredid Online Note</title>
+    <title>SISTEM PENILAIAN PRESTASI KVLD</title>
+    <style>
+        /* Fullscreen video styling */
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Prevent scrolling */
+        }
+
+        .title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.7); /* Light background for readability */
+            padding: 10px;
+            border-radius: 8px;
+        }
+        
+        .login-container {
+            width: 400px;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background */
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-container label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 12px;
+            margin: 12px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-align: center;
+            color: #007bff;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .forgot-password:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Aredid Online Note</h1>
-    </header>
-    <main>
-        <h2>Understanding Information and Communication Technology (ICT)</h2>
-        <p>
-            Information and Communication Technology (ICT) encompasses all technologies used to handle telecommunications, broadcast media, audio-visual processing, transmission systems, intelligent building management systems, and network-based control and monitoring functions. Essentially, ICT refers to any technology that enables the access, processing, and dissemination of information and communication in a digital format.
-        </p>
-        <p>
-            In today's digital age, ICT has become an integral part of our daily lives, impacting how we work, communicate, and interact. It includes a wide array of components like hardware (computers, servers, and networking devices), software (applications, databases, and operating systems), telecommunications services (internet, intranets, and extranets), and various digital services and products. The evolution of ICT has led to the development of the Internet, smartphones, cloud computing, and various social media platforms that are now widely used.
-        </p>
-        <p>
-            ICT plays a significant role in almost every aspect of modern society. In the field of education, it has transformed the way teachers teach and students learn. Digital tools like e-books, online courses, and educational platforms make learning more interactive and accessible. ICT also enables educators to use multimedia resources, interactive whiteboards, and virtual classrooms, thus fostering a more engaging and collaborative learning environment.
-        </p>
-        <p>
-            In business, ICT is crucial for communication, data management, and operations. Companies use ICT to communicate with customers, suppliers, and partners through emails, video conferences, and social media. ICT tools like Customer Relationship Management (CRM) software help businesses manage customer data and interactions effectively. Moreover, ICT is used in the development of e-commerce websites, enabling companies to sell products and services online, which has revolutionized retail markets worldwide.
-        </p>
-        <p>
-            ICT also plays a pivotal role in healthcare. With the advent of electronic medical records, telemedicine, and mobile health apps, ICT has transformed patient care. Doctors can now diagnose and treat patients remotely, access patient history at the click of a button, and share critical health information in real-time. ICT also supports medical research, enabling faster data analysis and collaboration among scientists worldwide.
-        </p>
-        <p>
-            The impact of ICT extends to government and public administration. Many governments have adopted e-government initiatives to improve public service delivery. This involves using digital platforms for tasks like filing taxes, applying for permits, or accessing public records. These initiatives enhance transparency, efficiency, and citizen engagement by reducing paperwork, improving access to information, and fostering a more responsive governance system.
-        </p>
-        <p>
-            Despite its numerous advantages, ICT also poses challenges. One of the primary concerns is cybersecurity. With increasing reliance on digital platforms, the risk of data breaches, hacking, and cyber-attacks has grown significantly. To mitigate these risks, organizations must invest in robust cybersecurity measures, such as encryption, firewalls, and multi-factor authentication.
-        </p>
-        <p>
-            Another challenge is the digital divide, which refers to the gap between those who have access to ICT and those who do not. This divide can be due to various factors like socio-economic status, geographic location, or education. Efforts are needed to bridge this gap by promoting digital literacy, ensuring affordable internet access, and providing ICT infrastructure in underserved areas.
-        </p>
-        <p>
-            In conclusion, Information and Communication Technology is a driving force behind the rapid transformation of our world. It has revolutionized communication, education, healthcare, business, and governance, making processes faster, more efficient, and more accessible. However, it is essential to address the associated challenges, such as cybersecurity threats and the digital divide, to fully harness the potential of ICT in fostering a more connected, informed, and equitable society.
-        </p>
-    </main>
+
+<!-- Background Video -->
+<video autoplay loop muted id="background-video">
+    <source src="haziq.mp4" type="video/mp4"> <!-- Replace 'sea-video.mp4' with the path to your video -->
+    Your browser does not support the video tag.
+</video>
+
+<div class="title">SISTEM PENILAIAN PRESTASI KVLD</div>
+
+<div class="login-container">
+    <form>
+        <label for="id_card">ID Card</label>
+        <input type="text" id="id_card" name="id_card" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+        
+        <!-- Forgot Password Link -->
+        <a href="#" class="forgot-password">Forgot Password?</a>
+    </form>
+</div>
+
 </body>
 </html>
